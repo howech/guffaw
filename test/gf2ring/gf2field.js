@@ -64,8 +64,6 @@ buster.testCase("Zero and one properties", {
 	assert(one.equals(third.multiply(three)))
 	assert(one.equals(three.multiply(third)))
 
-	console.log(half.value.toHex())
-	console.log(two.value.toHex())
     },
 
     'taste failure' : function() {

@@ -8,9 +8,7 @@ var refute = buster.referee.refute
 
 var zero = GF2PolyRing.prototype.zero
 var one  = GF2PolyRing.prototype.one
-console.log(one)
 var two = GF2PolyRing.prototype.one.shift(1)
-console.log(two)
 
 buster.testCase("Zero and one properties", {
     'test zero is zero': function() {
