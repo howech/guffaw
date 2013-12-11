@@ -1,0 +1,20 @@
+{
+  "name": "guffaw",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "buster test"
+  },
+  "author": "Chris Howe <chris@howeville.com>",
+  "license": "Apache 2",
+  "description": "",
+  "devDependencies": {
+    "buster": "~0.6.13"
+  },
+  "dependencies" : {
+  }
+}
