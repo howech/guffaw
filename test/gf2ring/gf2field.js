@@ -66,7 +66,13 @@ buster.testCase("Zero and one properties", {
 
     },
 
-    'taste failure' : function() {
-	assert(false)
-    }
+    'test parse': function() {
+	var z = new one.field.member( one.field, new one.field.ring.member( {'elements': [0,1,2,3,30,31,32,33,34,35]}) )
+	var h = z.toHex()
+	var zz = z.field.parse(h)
+	assert(z.equals(zz))
+
+	var q = one.field.encodeInt(17)
+	assert(q.decodeInt() == 17, "decodeInt")
+    },
 })

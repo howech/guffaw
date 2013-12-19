@@ -76,6 +76,19 @@ buster.testCase("Zero and one properties", {
     },
 
 
+    'test parse': function() {
+	var z = one.another( {'elements': [0,1,2,3,30,31,32,33,34,35]} )
+	var h = z.toHex()
+	var zz = z.ring.parse(h)
+	assert(z.equals(zz))
+
+
+	var q = one.ring.encodeString( "This is a test" )
+	console.log(q.decodeString())
+	assert(q.decodeString() == "This is a test")
+    },
+
+
     'taste failure' : function() {
 	assert(false)
     }
